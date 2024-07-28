@@ -41,7 +41,9 @@ fun Application.module() {
 
     val hashingService = SHA256HashingService()
 
-    configureRouting()
+    configureRouting(
+        userDataSource, tokenService, hashingService, tokenConfig
+    )
     configureSerialization()
 //    configureDatabases()
     configureMonitoring()
