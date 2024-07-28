@@ -45,8 +45,11 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 
 
-    implementation("org.litote.kmongo:kmongo:4.2.3")
-    implementation("org.litote.kmongo:kmongo-coroutine:4.2.3")
+    implementation("org.litote.kmongo:kmongo-coroutine-serialization:4.10.0")
+    implementation("org.litote.kmongo:kmongo-coroutine-core:4.10.0")
+    implementation("org.mongodb:mongodb-driver-reactivestreams:4.10.0")
+
+
 
     implementation("io.insert-koin:koin-core:3.1.2")
     implementation("io.insert-koin:koin-ktor:3.1.2")
